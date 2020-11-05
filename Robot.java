@@ -12,7 +12,7 @@ import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.PWMVictorSPX;
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
-import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
+import edu.wpi.first.wpilibj.smartdashboard.SendableChooser; f
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.VictorSP;
@@ -108,17 +108,13 @@ public class Robot extends TimedRobot {
 {
   tirmanma.set(1);
 }
-  else if (melih.getRawButton(1))
+  else if (melih.getRawButton(5))
 {
-  tirmanma.set(0.4);
+  tirmanma.set(-0.5);
 }
   else
  {
    tirmanma.set(0);
- }
-  if (melih.getRawButton(5))
- {
-   tirmanma.set(-0.5);
  }
  ////////////////////////////////
  if (atakan.getRawButton(5))
